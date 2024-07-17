@@ -148,7 +148,7 @@ img.serviceicon {
 
 :root {
   /* Colors */
-  --brand-color: hsl(293, 100%, 50%);
+  --brand-color: hsla(295, 100%, 50%, 0.507);
   --black: hsl(0, 0%, 100%);
   --white: hsl(0, 0%, 100%);
   /* Fonts */
@@ -230,8 +230,8 @@ p {
     180deg,
     hsla(0, 0%, 0%, 0.555) 30%,
     hsla(315, 83%, 23%, 0.274) 40%,
-    hsla(310, 100%, 50%, 0.377) 50%,
-    hsl(320, 89%, 18%) 100%
+    hsla(0, 0%, 0%, 0.377) 50%,
+    hsl(0, 0%, 0%) 100%
   );
 }
 
@@ -338,3 +338,69 @@ p {
     transition-delay: 500ms;
   }
 }
+
+
+
+
+
+
+.socials{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+.socials li{
+  margin: 0 10px;
+}
+.socials a{
+  text-decoration: none;
+  color: #fff;
+  border: 1.1px solid white;
+  padding: 5px;
+  border-radius: 50%;
+}
+.socials a i{
+  font-size: 1.1rem;
+  width: 20px;
+  transition: color .4s ease;
+}
+.socials a:hover i{
+  color: dodgerblue;
+}
+/* copyright*/
+.footer-copyright{
+  background: #000;
+  width: 100vw;
+  padding: 20px 20px 50px 20px;
+}
+.footer-copyright p{
+  font-size: 14px;
+  word-spacing: 2px;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

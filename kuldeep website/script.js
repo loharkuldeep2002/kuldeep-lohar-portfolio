@@ -183,3 +183,13 @@
     }
     
 })();
+
+// mail copy function
+const emailButton = document.querySelector('.email-button');
+const emailAddress = 'loharkuldeep2002@gmail.com'; // Replace with your actual email address
+
+emailButton.addEventListener('click', () => {
+  navigator.clipboard.writeText(emailAddress);
+  // Optionally, provide feedback to the user:
+  alert('Email address copied to clipboard!');
+});
