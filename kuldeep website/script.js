@@ -199,11 +199,11 @@ emailButton.addEventListener('click', () => {
 
 
 // Function to handle smooth scrolling
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll('nav a').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
+        anchor.addEventListener('click', function (e) {
             e.preventDefault();
-            
+
             const target = document.querySelector(this.getAttribute('href'));
             window.scrollTo({
                 top: target.offsetTop,

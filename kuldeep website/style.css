@@ -4,9 +4,13 @@
 
 .blur-background {
   backdrop-filter: blur(10px); /* Adjust the blur intensity as needed */
-  background: rgba(255, 255, 255, 0.1); /* Semi-transparent background for better effect */
+  background: rgba(
+    255,
+    255,
+    255,
+    0.1
+  ); /* Semi-transparent background for better effect */
 }
-
 
 /* Navigation Menu Styling */
 .navMenu {
@@ -183,6 +187,15 @@
 
 .navMenu li:nth-child(5):hover ~ .dot {
   transform: translateX(calc(450% + 16px)) translateX(-50%);
+}
+
+/* Add this to make the navbar sticky */
+.nav {  
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999; /* Ensure it's above other content */
 }
 
 /* size in window  */
@@ -584,10 +597,8 @@ p {
   justify-content: center;
 }
 
-
 /* slid down container  */
 html {
   scroll-behavior: smooth;
   scroll-timeline: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
